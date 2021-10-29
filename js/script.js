@@ -482,8 +482,8 @@ loadData = async (url) => {
 
 // Behandlar data från JSON fil
 printData = async () => {
-    const jsonCountries = await loadData('http://localhost:3000/countries');
-    const jsonCities = await loadData('http://localhost:3000/cities');
+    const jsonCountries = await loadData('https://lander-och-stader.herokuapp.com/countries');
+    const jsonCities = await loadData('https://lander-och-stader.herokuapp.com/cities');
 
     // Hämtar lagrad IDs
     if (localStorage.getItem(storageKey)) {
