@@ -1,0 +1,170 @@
+* {
+  font-family: "montserrat";
+}
+
+button:disabled,
+button[disabled]{
+  cursor: unset;
+  color: black;
+}
+
+#nav {
+  justify-content: center;
+  margin-left:auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  cursor: pointer;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.collapsible {
+  background-color: white;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  text-align: center;
+  position: relative;
+}
+
+.active, .collapsible:hover, .collapsible:hover .indicator-active {
+  background-color: gray;
+  color:white;
+}
+
+.active-content, .active-visit-btn {
+  background-color: lightgreen !important;
+}
+
+.content {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.content > div > p {
+  padding: 0 20px;
+  text-align: start;
+}
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#wrapper > h2 {
+    flex-basis: 100%;
+    text-align: center;
+    margin: 20px;
+}
+
+#wrapper > p {
+  flex-basis: 100%;
+  text-align: center;
+  margin-top: 0;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.ul-nav {
+    margin: 0;
+    padding: 0;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
+
+.visit-button {
+    margin-left: 5px;
+    border-radius: 0;
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#switch-view-button {
+  align-self: center;
+  margin-top: 30px;
+}
+
+#container {
+  text-align: center;
+}
+
+.city-node {
+  margin-bottom: 10px;
+  border: 1px solid gray;
+}
+
+.far, .fas {
+  margin-right: 5px;
+  align-self: center;
+  justify-self: end;
+}
+
+.visit-btn-txt {
+  padding: 0;
+  margin: 0;
+  align-self: center;
+  justify-self: start;
+}
+
+.indicator-active {
+  background-color: lightgreen;
+}
+
+.indicator {
+  position: absolute;
+  width: 15px;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+}
+
+#clear-view-button,
+#switch-view-button,
+.country-tab {
+  margin-right: 5px;
+  margin-left: 5px;
+  min-width: 10em;
+  background-color: white;
+  border: black 1px solid;
+}
+
+#clear-view-button:disabled,
+#clear-view-button[disabled],
+#switch-view-button:disabled,
+#switch-view-button[disabled]{
+  border: 1px solid #B7B7B7;
+  cursor: unset;
+  color: #B7B7B7;
+}
